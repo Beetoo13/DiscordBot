@@ -4,12 +4,15 @@
   "description": "Discord bot for the neighborhood friends",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "nodemon": "nodemon index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Beetoo13, Fla2309",
   "license": "ISC",
   "dependencies": {
+    "better-discord-antispam": "^2.0.0",
+    "discord-anti-spam": "^2.5.1",
     "discord.js": "^12.5.1",
     "dotenv": "^8.2.0"
   },
