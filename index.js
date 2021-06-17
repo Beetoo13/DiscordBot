@@ -75,6 +75,12 @@ client.on("message", (msg) => {
 });
 
 client.on("message", (msg) => {
+  if (msg.content.toLowerCase().startsWith("-hola")) {
+    msg.reply("Holiwi uwu");
+  }
+});
+
+client.on("message", (msg) => {
   if (
     msg.content.toLowerCase().startsWith("-ratapuke") ||
     msg.content.toLowerCase().startsWith("-prime") ||
