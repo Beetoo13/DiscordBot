@@ -38,6 +38,26 @@ client.on("message", (msg) => {
 });
 
 client.on("message", (msg) => {
+  if (msg.content.toLowerCase() === "-booba") {
+    const attachment = new Discord.MessageAttachment(
+      "https://i.kym-cdn.com/photos/images/original/001/940/252/3b6.gif"
+    );
+
+    msg.channel.send(attachment);
+  }
+});
+
+client.on("message", (msg) => {
+  if (msg.content.toLowerCase() === "-who") {
+    const attachment = new Discord.MessageAttachment(
+      "https://media.giphy.com/media/cRNbYm7jLOjm9H8wcP/giphy.gif"
+    );
+
+    msg.channel.send(attachment);
+  }
+});
+
+client.on("message", (msg) => {
   if (msg.content.toLowerCase().startsWith("-prime")) {
     if (msg.mentions.users.first() == undefined) {
       msg.reply("necesitas taggear a alguien para dedicarle un prime");
@@ -65,17 +85,21 @@ client.on("message", (msg) => {
 });
 
 client.on("message", (msg) => {
-  if (msg.content.toLowerCase().startsWith("-commands")) {
-    msg.reply(`Estos son los comandos disponibles por ahora:
+  if (msg.content.toLowerCase() === "-commands") {
+    msg.reply(`
+    Estos son los comandos disponibles por ahora:
     **-ratapuke**, despliega el buenisisisimo gif de ratatouille
     **-avatar <@user>**, despliega la imagen del usuario mencionado
     **-prime <@user>**, le dedica un buen prime al usuario mencionado
+    **-hola**, holiwi uwu
+    **-booba**, despliega el booba gif
+    **-who**, despliega el who gif
     `);
   }
 });
 
 client.on("message", (msg) => {
-  if (msg.content.toLowerCase().startsWith("-hola")) {
+  if (msg.content.toLowerCase() === "-hola") {
     msg.reply("Holiwi uwu");
   }
 });
