@@ -58,6 +58,16 @@ client.on("message", (msg) => {
 });
 
 client.on("message", (msg) => {
+  if (msg.content.toLowerCase() === "-yatevimos") {
+    const attachment = new Discord.MessageAttachment(
+      "https://imgur.com/iJxiHlW"
+    );
+
+    msg.channel.send(attachment);
+  }
+});
+
+client.on("message", (msg) => {
   if (msg.content.toLowerCase().startsWith("-prime")) {
     if (msg.mentions.users.first() == undefined) {
       msg.reply("necesitas taggear a alguien para dedicarle un prime");
@@ -94,6 +104,7 @@ client.on("message", (msg) => {
     **-hola**, holiwi uwu
     **-booba**, despliega el booba gif
     **-who**, despliega el who gif
+    **-yatevimos**, despliega la imagen de ya te vimos (simpsons)
     `);
   }
 });
