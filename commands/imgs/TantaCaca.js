@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 
-const tantacaca = (msg) => {
+const tantaCaca = (msg) => {
   if (msg.content.toLowerCase() === "-tantacaca") {
     const attachment = new Discord.MessageAttachment(
       "https://i.imgur.com/Vm2X1hN.jpg"
@@ -10,4 +10,4 @@ const tantacaca = (msg) => {
   }
 };
 
-module.exports = tantacaca;
+module.exports = tantaCaca;
