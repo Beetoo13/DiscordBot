@@ -7,6 +7,11 @@ const commands = (msg) => {
                 **-booba**, booba gif
                 **-who**, who gif
                 **-dance**, Itadori gif
+                **-anyRollers**, any rollers in the chat?
+                **-cantClaim**, k pasó amiguito? No tiene claim?
+                **-stoleYourWaifu**, LE ROBARON LA WAIFU AL VATOOO
+                **-tyler1**, tyler bien bonito con lentes jiji
+                **-wonNothing**, k pasó amiguito? No ganó nada en el casino?
             Imagenes:
                 **-yaTeVimos**, imagen de ya te vimos (simpsons)
                 **-muereGaby**, MUERTEE A GABYYYY

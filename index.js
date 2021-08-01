@@ -6,6 +6,11 @@ const ratapuke = require("./commands/gifs/Ratapuke");
 const booba = require("./commands/gifs/Booba");
 const who = require("./commands/gifs/Who");
 const dance = require("./commands/gifs/Dance");
+const tyler1 = require("./commands/gifs/Tyler1");
+const wonNothing = require("./commands/gifs/wonNothing");
+const stoleYourWaifu = require("./commands/gifs/stoleYourWaifu");
+const cantClaim = require("./commands/gifs/cantClaim");
+const anyRollers = require("./commands/gifs/anyRollers");
 
 // Images
 const yaTeVimos = require("./commands/imgs/Yatevimos");
@@ -25,8 +30,8 @@ const hola = require("./commands/replies/Hola");
 require("dotenv").config();
 
 client.on("ready", () => {
-  client.user.setUsername("Jarvis región 4");
-  client.user.setActivity("Atender huercos");
+  client.user.setUsername("Hifumi");
+  client.user.setActivity("-commands", { type: "LISTENING" });
 
   // Bog logged in
   console.log(`Bot is ready, logged in as: ${client.user.tag}`);
@@ -38,6 +43,11 @@ client.on("message", (msg) => {
   booba(msg);
   who(msg);
   dance(msg);
+  tyler1(msg);
+  wonNothing(msg);
+  stoleYourWaifu(msg);
+  cantClaim(msg);
+  anyRollers(msg);
 
   // Images
   yaTeVimos(msg);
