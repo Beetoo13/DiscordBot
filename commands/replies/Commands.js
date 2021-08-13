@@ -20,6 +20,8 @@ const commands = (msg) => {
                 **-buenDato**, buen datoooooooo mi compaaaaaaaaa
                 **-llevalaALaLuna**, llevala a la luna por mi 🥺
                 **-porFavorAmigo**, por favor amigo te chuparé...
+                **-conQuienHablas**, con quien hablas weeeeeee
+                **-paQueLoBorra**, PA QUE LO BORRA QLOOO
             Respuestas:
                 **-avatar <@user>**, despliega el avatar del usuario mencionado
                 **-prime <@user>**, le dedica un buen prime al usuario mencionado

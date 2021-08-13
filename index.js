@@ -20,6 +20,8 @@ const muereGaby = require("./commands/imgs/MuereGaby");
 const buenDato = require("./commands/imgs/BuenDato");
 const llevalaALaLuna = require("./commands/imgs/LlevalaALaLuna");
 const porFavorAmigo = require("./commands/imgs/PorFavorAmigo");
+const conQuienHablas = require("./commands/imgs/ConQuienHablas");
+const paQueLoBorra = require("./commands/imgs/PaQueLoBorra");
 
 // Replies
 const prime = require("./commands/replies/Prime");
@@ -57,6 +59,8 @@ client.on("message", (msg) => {
   buenDato(msg);
   llevalaALaLuna(msg);
   porFavorAmigo(msg);
+  conQuienHablas(msg);
+  paQueLoBorra(msg);
 
   // Replies
   prime(msg);
