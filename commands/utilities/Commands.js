@@ -49,7 +49,7 @@ const utilityCommands = () => {
 };
 
 const commands = (msg) => {
-  if (msg.content.toLowerCase() === "-commands2") {
+  if (msg.content.toLowerCase() === "-commands") {
     gifCommands();
     imgCommands();
     utilityCommands();
