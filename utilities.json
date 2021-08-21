@@ -1,0 +1,20 @@
+{
+  "commands": [
+    {
+      "nombre": "-avatar <@user>",
+      "descripcion": "despliega el avatar del usuario mencionado"
+    },
+    {
+      "nombre": "-prime <@user>",
+      "descripcion": "le dedica un buen prime al usuario mencionado"
+    },
+    {
+      "nombre": "-hola",
+      "descripcion": "holiwi uwu"
+    },
+    {
+      "nombre": "-dice",
+      "descripcion": "Tira un dado y obten un número al azar entre 1 y 6"
+    }
+  ]
+}
