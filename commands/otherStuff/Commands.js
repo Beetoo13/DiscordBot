@@ -1,7 +1,7 @@
 const { MessageEmbed } = require("discord.js");
 const gifs = require("../../gifs.json");
 const imgs = require("../../images.json");
-const utilities = require("../../utilities.json");
+const otherStuff = require("../../otherStuff.json");
 
 const commandsEmbed = new MessageEmbed()
   .setColor("#0099ff")
@@ -14,7 +14,6 @@ const commandsEmbed = new MessageEmbed()
   .setImage(
     "https://64.media.tumblr.com/cdaf1051b646808858887a94fe922abd/tumblr_ocftgkD3li1qg78wpo1_540.gif"
   )
-  .setTimestamp()
   .setFooter("Creado por Beto", "https://i.imgur.com/W0hQgU8.jpg");
 
 const gifCommands = () => {
@@ -37,22 +36,22 @@ const imgCommands = () => {
   commandsEmbed.addField("Imagenes", textoVacio);
 };
 
-const utilityCommands = () => {
+const otherStuffCommands = () => {
   let textoVacio = "";
 
-  utilities.commands.forEach((reply) => {
+  otherStuff.commands.forEach((reply) => {
     textoVacio =
       textoVacio + `**${reply.nombre}:** ` + `${reply.descripcion} \n`;
   });
 
-  commandsEmbed.addField("Utilidades", textoVacio);
+  commandsEmbed.addField("Other stuff", textoVacio);
 };
 
 const commands = (msg) => {
   if (msg.content.toLowerCase() === "-commands") {
     gifCommands();
     imgCommands();
-    utilityCommands();
+    otherStuffCommands();
     msg.channel.send({ embed: commandsEmbed });
   }
 };

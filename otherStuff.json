@@ -15,6 +15,10 @@
     {
       "nombre": "-dice",
       "descripcion": "Tira un dado y obten un número al azar entre 1 y 6"
+    },
+    {
+      "nombre": "-bities",
+      "descripcion": "weeEeEEeyYYyyY SiiIiiIiIi, BTSSSSS"
     }
   ]
 }

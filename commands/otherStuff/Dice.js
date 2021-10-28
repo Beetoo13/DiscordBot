@@ -8,7 +8,6 @@ const diceEmbed = new MessageEmbed()
   .setThumbnail(
     "https://images-na.ssl-images-amazon.com/images/I/51AqMK2I9nL.png"
   )
-  .setTimestamp()
   .setFooter("Creado por Beto", "https://i.imgur.com/W0hQgU8.jpg");
 
 const randomNumber = () => {

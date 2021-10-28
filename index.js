@@ -24,12 +24,13 @@ const conQuienHablas = require("./commands/imgs/ConQuienHablas");
 const paQueLoBorra = require("./commands/imgs/PaQueLoBorra");
 const lloriquin = require("./commands/imgs/Lloriquin");
 
-// Replies
-const prime = require("./commands/utilities/Prime");
-const avatar = require("./commands/utilities/Avatar");
-const commands = require("./commands/utilities/Commands");
-const hola = require("./commands/utilities/Hola");
-const dice = require("./commands/utilities/Dice");
+// Other stuff
+const prime = require("./commands/otherStuff/Prime");
+const avatar = require("./commands/otherStuff/Avatar");
+const commands = require("./commands/otherStuff/Commands");
+const hola = require("./commands/otherStuff/Hola");
+const dice = require("./commands/otherStuff/Dice");
+const bities = require("./commands/otherStuff/Bities");
 
 require("dotenv").config();
 
@@ -65,12 +66,13 @@ client.on("message", (msg) => {
   paQueLoBorra(msg);
   lloriquin(msg);
 
-  // Utilities
+  // Other Stuff
   prime(msg);
   avatar(msg);
   commands(msg);
   hola(msg);
   dice(msg);
+  bities(msg);
 });
 
 client.login(process.env.BOT_TOKEN);
