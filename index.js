@@ -23,6 +23,7 @@ const porFavorAmigo = require("./commands/imgs/PorFavorAmigo");
 const conQuienHablas = require("./commands/imgs/ConQuienHablas");
 const paQueLoBorra = require("./commands/imgs/PaQueLoBorra");
 const lloriquin = require("./commands/imgs/Lloriquin");
+const agarrameWe = require("./commands/imgs/AgarrameWe");
 
 // Other stuff
 const prime = require("./commands/otherStuff/Prime");
@@ -65,6 +66,7 @@ client.on("message", (msg) => {
   conQuienHablas(msg);
   paQueLoBorra(msg);
   lloriquin(msg);
+  agarrameWe(msg);
 
   // Other Stuff
   prime(msg);
