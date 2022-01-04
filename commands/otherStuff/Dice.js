@@ -74,10 +74,10 @@ const randomNumber = () => {
 };
 
 const dice = (msg) => {
-  if (msg.content.toLowerCase() === "-dice") {
-    randomNumber();
-    msg.channel.send({ embed: diceEmbed });
-  }
+  if (msg.content.toLowerCase() !== "-dice") return;
+
+  randomNumber();
+  msg.channel.send({ embed: diceEmbed });
 };
 
 module.exports = dice;

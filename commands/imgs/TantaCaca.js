@@ -1,13 +1,13 @@
 const Discord = require("discord.js");
 
 const tantaCaca = (msg) => {
-  if (msg.content.toLowerCase() === "-tantacaca") {
-    const attachment = new Discord.MessageAttachment(
-      "https://i.imgur.com/Vm2X1hN.jpg"
-    );
+  if (msg.content.toLowerCase() === "-tantacaca") return;
 
-    msg.channel.send(attachment);
-  }
+  const attachment = new Discord.MessageAttachment(
+    "https://i.imgur.com/Vm2X1hN.jpg"
+  );
+
+  msg.channel.send(attachment);
 };
 
 module.exports = tantaCaca;

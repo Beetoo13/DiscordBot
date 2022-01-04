@@ -1,13 +1,13 @@
 const Discord = require("discord.js");
 
 const dance = (msg) => {
-  if (msg.content.toLowerCase() === "-dance") {
-    const attachment = new Discord.MessageAttachment(
-      "https://i.imgur.com/DP8xxd7.gif"
-    );
+  if (msg.content.toLowerCase() !== "-dance") return;
 
-    msg.channel.send(attachment);
-  }
+  const attachment = new Discord.MessageAttachment(
+    "https://i.imgur.com/DP8xxd7.gif"
+  );
+
+  msg.channel.send(attachment);
 };
 
 module.exports = dance;

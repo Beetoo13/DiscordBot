@@ -1,13 +1,13 @@
 const Discord = require("discord.js");
 
 const muereGaby = (msg) => {
-  if (msg.content.toLowerCase() === "-mueregaby") {
-    const attachment = new Discord.MessageAttachment(
-      "https://i.imgur.com/W5DlJkI.jpg"
-    );
+  if (msg.content.toLowerCase() === "-mueregaby") return;
 
-    msg.channel.send(attachment);
-  }
+  const attachment = new Discord.MessageAttachment(
+    "https://i.imgur.com/W5DlJkI.jpg"
+  );
+
+  msg.channel.send(attachment);
 };
 
 module.exports = muereGaby;
