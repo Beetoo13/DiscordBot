@@ -1,13 +1,13 @@
 const Discord = require("discord.js");
 
 const llevalaALaLuna = (msg) => {
-  if (msg.content.toLowerCase() === "-llevalaalaluna") return;
+  if (msg.content.toLowerCase() === "-llevalaalaluna") {
+    const attachment = new Discord.MessageAttachment(
+      "https://i.imgur.com/b2UJfYh.png"
+    );
 
-  const attachment = new Discord.MessageAttachment(
-    "https://i.imgur.com/b2UJfYh.png"
-  );
-
-  msg.channel.send(attachment);
+    msg.channel.send(attachment);
+  }
 };
 
 module.exports = llevalaALaLuna;

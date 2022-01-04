@@ -1,13 +1,13 @@
 const Discord = require("discord.js");
 
 const noHayAmigos = (msg) => {
-  if (msg.content.toLowerCase() === "-nohayamigos") return;
+  if (msg.content.toLowerCase() === "-nohayamigos") {
+    const attachment = new Discord.MessageAttachment(
+      "https://i.imgur.com/6ux2P8j.jpg"
+    );
 
-  const attachment = new Discord.MessageAttachment(
-    "https://i.imgur.com/6ux2P8j.jpg"
-  );
-
-  msg.channel.send(attachment);
+    msg.channel.send(attachment);
+  }
 };
 
 module.exports = noHayAmigos;

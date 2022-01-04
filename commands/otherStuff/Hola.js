@@ -1,7 +1,7 @@
 const hola = (msg) => {
-  if (msg.content.toLowerCase() === "-hola") return;
-
-  msg.reply("Holiwi uwu");
+  if (msg.content.toLowerCase() === "-hola") {
+    msg.reply("Holiwi uwu");
+  }
 };
 
 module.exports = hola;

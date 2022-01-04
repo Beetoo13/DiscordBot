@@ -1,13 +1,13 @@
 const Discord = require("discord.js");
 
 const porFavorAmigo = (msg) => {
-  if (msg.content.toLowerCase() === "-porfavoramigo") return;
+  if (msg.content.toLowerCase() === "-porfavoramigo") {
+    const attachment = new Discord.MessageAttachment(
+      "https://i.imgur.com/DTquZwg.jpg"
+    );
 
-  const attachment = new Discord.MessageAttachment(
-    "https://i.imgur.com/DTquZwg.jpg"
-  );
-
-  msg.channel.send(attachment);
+    msg.channel.send(attachment);
+  }
 };
 
 module.exports = porFavorAmigo;

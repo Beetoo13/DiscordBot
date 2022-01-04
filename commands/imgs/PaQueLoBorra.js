@@ -1,13 +1,13 @@
 const Discord = require("discord.js");
 
 const paQueLoBorra = (msg) => {
-  if (msg.content.toLowerCase() === "-paqueloborra") return;
+  if (msg.content.toLowerCase() === "-paqueloborra") {
+    const attachment = new Discord.MessageAttachment(
+      "https://i.imgur.com/N3cziXj.jpg"
+    );
 
-  const attachment = new Discord.MessageAttachment(
-    "https://i.imgur.com/N3cziXj.jpg"
-  );
-
-  msg.channel.send(attachment);
+    msg.channel.send(attachment);
+  }
 };
 
 module.exports = paQueLoBorra;
