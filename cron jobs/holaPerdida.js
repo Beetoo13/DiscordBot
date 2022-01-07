@@ -13,18 +13,26 @@ const holaPerdida = (client) => {
     () => {
       client.channels.cache
         .get(mainRoomChannelId)
-        .send("<@" + gabyUserId + ">" + " Hola perdida 👀");
+        .send(
+          "<@" + gabyUserId + ">" + " Hola perdida, buen inicio de semana 👀"
+        );
     },
     {
       timezone: timezone,
     }
   );
 
-  // cron.schedule("40 17 * * *", () => {
-  //   client.channels.cache
-  //     .get(testingChannelId)
-  //     .send("<@" + betoUserId + ">" + " Hola perdida 👀");
-  // });
+  cron.schedule(
+    "0 9 * * fri",
+    () => {
+      client.channels.cache
+        .get(mainRoomChannelId)
+        .send("<@" + gabyUserId + ">" + " Hola perdida, buen fin de semana 👀");
+    },
+    {
+      timezone: timezone,
+    }
+  );
 };
 
 module.exports = holaPerdida;
