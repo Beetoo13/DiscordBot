@@ -34,8 +34,9 @@ const dice = require("./commands/otherStuff/Dice");
 const bities = require("./commands/otherStuff/Bities");
 
 // Cron Jobs
-const holaPerdida = require("./cron jobs/holaPerdida");
-const isToday = require("./cron jobs/birthdays");
+const holaPerdida = require("./cron jobs/HolaPerdida");
+const isToday = require("./cron jobs/Birthdays");
+const ferDirectMessage = require("./cron jobs/FerDm");
 
 require("dotenv").config();
 
@@ -45,9 +46,11 @@ client.on("ready", () => {
 
   // Bog logged in
   console.log(`Bot is ready, logged in as: ${client.user.tag}`);
+
   //Set-up cron job methods
   holaPerdida(client);
   isToday(client);
+  ferDirectMessage(client);
 });
 
 client.on("message", (msg) => {

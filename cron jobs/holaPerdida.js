@@ -1,4 +1,3 @@
-const Discord = require("discord.js");
 var cron = require("node-cron");
 
 const holaPerdida = (client) => {
