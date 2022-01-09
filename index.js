@@ -34,9 +34,9 @@ const dice = require("./commands/otherStuff/Dice");
 const bities = require("./commands/otherStuff/Bities");
 
 // Cron Jobs
-const holaPerdida = require("./cron jobs/HolaPerdida");
-const isToday = require("./cron jobs/Birthdays");
-const ferDirectMessage = require("./cron jobs/FerDm");
+const holaPerdida = require("./cron_jobs/HolaPerdida");
+const isToday = require("./cron_jobs/Birthdays");
+const ferDirectMessage = require("./cron_jobs/FerDm");
 
 require("dotenv").config();
 
