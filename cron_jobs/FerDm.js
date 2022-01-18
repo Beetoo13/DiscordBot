@@ -22,17 +22,7 @@ const ferDirectMessage = (client) => {
   const attachment = new Discord.MessageAttachment(randomLink);
 
   cron.schedule(
-    "0 9 * * mon",
-    () => {
-      client.users.cache.get(ferDiscordId).send(attachment);
-    },
-    {
-      timezone: timezone,
-    }
-  );
-
-  cron.schedule(
-    "0 9 * * fri",
+    "0 9 1 1-12 *",
     () => {
       client.users.cache.get(ferDiscordId).send(attachment);
     },

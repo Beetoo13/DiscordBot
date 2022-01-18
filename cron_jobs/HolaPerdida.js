@@ -8,25 +8,11 @@ const holaPerdida = (client) => {
   const timezone = "America/Chihuahua";
 
   cron.schedule(
-    "0 9 * * mon",
+    "0 9 1 1-12 *",
     () => {
       client.channels.cache
         .get(mainRoomChannelId)
-        .send(
-          "<@" + gabyUserId + ">" + " Hola perdida, buen inicio de semana 👀"
-        );
-    },
-    {
-      timezone: timezone,
-    }
-  );
-
-  cron.schedule(
-    "0 9 * * fri",
-    () => {
-      client.channels.cache
-        .get(mainRoomChannelId)
-        .send("<@" + gabyUserId + ">" + " Hola perdida, buen fin de semana 👀");
+        .send("<@" + gabyUserId + ">" + " Hola perdida, buen inicio de mes 👀");
     },
     {
       timezone: timezone,
