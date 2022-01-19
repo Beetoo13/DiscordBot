@@ -19,6 +19,10 @@
     {
       "nombre": "-bities",
       "descripcion": "weeEeEEeyYYyyY SiiIiiIiIi, BTSSSSS"
+    },
+    {
+      "nombre": "-dlvideo <youtube_url>",
+      "descripcion": "Descarga un video de youtube y lo convierte a mp3 para que lo descargues"
     }
   ]
 }

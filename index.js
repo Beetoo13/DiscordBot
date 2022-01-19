@@ -32,6 +32,7 @@ const commands = require("./commands/otherStuff/Commands");
 const hola = require("./commands/otherStuff/Hola");
 const dice = require("./commands/otherStuff/Dice");
 const bities = require("./commands/otherStuff/Bities");
+const downloadVideo = require("./commands/otherStuff/VideoToMp3");
 
 // Cron Jobs
 const holaPerdida = require("./cron_jobs/HolaPerdida");
@@ -85,6 +86,7 @@ client.on("message", (msg) => {
   hola(msg);
   dice(msg);
   bities(msg);
+  downloadVideo(msg);
 });
 
 client.login(process.env.BOT_TOKEN);
