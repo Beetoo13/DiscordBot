@@ -13,22 +13,21 @@ const isToday = (client) => {
   var month = date.getMonth() + 1;
 
   cron.schedule(
-    "0 0 * * *",
+    "15 1 * * *",
     () => {
       jsonBirthdays.arrayBirthdays.forEach((birthday) => {
-        if (birthday.day != day) return;
-        if (birthday.month != month) return;
-
-        client.channels.cache
-          .get(mainRoomChannelId)
-          .send(
-            "@everyone" +
-              ", pasen a desearle feliz cumple a " +
-              "<@" +
-              birthday.userId +
-              "> hoy en su día " +
-              emoteMain
-          );
+        if (birthday.day == day && birthday.month == month) {
+          client.channels.cache
+            .get(mainRoomChannelId)
+            .send(
+              "@everyone" +
+                ", pasen a desearle feliz cumple a " +
+                "<@" +
+                birthday.userId +
+                "> hoy en su día " +
+                emoteMain
+            );
+        }
       });
     },
     {
