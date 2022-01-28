@@ -13,7 +13,7 @@ const isToday = (client) => {
   var month = date.getMonth() + 1;
 
   cron.schedule(
-    "15 1 * * *",
+    "0 0 * * *",
     () => {
       jsonBirthdays.arrayBirthdays.forEach((birthday) => {
         if (birthday.day == day && birthday.month == month) {
