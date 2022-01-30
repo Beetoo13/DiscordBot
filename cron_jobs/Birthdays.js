@@ -17,6 +17,9 @@ const isToday = (client) => {
     () => {
       jsonBirthdays.arrayBirthdays.forEach((birthday) => {
         if (birthday.day == day && birthday.month == month) {
+          console.log(
+            `El día en json es: ${birthday.day} y el mes en json es: ${birthday.month}`
+          );
           client.channels.cache
             .get(mainRoomChannelId)
             .send(
