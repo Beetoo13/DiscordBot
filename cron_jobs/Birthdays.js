@@ -21,14 +21,14 @@ const isToday = (client) => {
             `El día en json es: ${birthday.day} y el mes en json es: ${birthday.month}`
           );
           client.channels.cache
-            .get(mainRoomChannelId)
+            .get(testingChannelId)
             .send(
               "@everyone" +
                 ", pasen a desearle feliz cumple a " +
                 "<@" +
                 birthday.userId +
                 "> hoy en su día " +
-                emoteMain
+                emoteTesting
             );
         }
       });
