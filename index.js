@@ -40,6 +40,7 @@ const facilitoTutorial = require("./commands/otherStuff/FacilitoTutorial");
 const holaPerdida = require("./cron_jobs/HolaPerdida");
 const isToday = require("./cron_jobs/Birthdays");
 const ferDirectMessage = require("./cron_jobs/FerDm");
+const botAwake = require("./cron_jobs/botAwake");
 
 require("dotenv").config();
 
@@ -54,6 +55,7 @@ client.on("ready", () => {
   holaPerdida(client);
   isToday(client);
   ferDirectMessage(client);
+  botAwake();
 });
 
 client.on("message", (msg) => {
