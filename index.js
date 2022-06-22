@@ -40,7 +40,7 @@ const facilitoTutorial = require("./commands/otherStuff/FacilitoTutorial");
 const holaPerdida = require("./cron_jobs/HolaPerdida");
 const isToday = require("./cron_jobs/Birthdays");
 const ferDirectMessage = require("./cron_jobs/FerDm");
-const botAwake = require("./cron_jobs/botAwake");
+const botAwake = require("./cron_jobs/KeepBotAwake");
 
 require("dotenv").config();
 
