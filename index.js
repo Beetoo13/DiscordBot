@@ -36,10 +36,6 @@ const downloadVideo = require("./commands/otherStuff/VideoToMp3");
 const badBony = require("./commands/otherStuff/BadBony");
 const facilitoTutorial = require("./commands/otherStuff/FacilitoTutorial");
 
-// Cron Jobs
-const holaPerdida = require("./cron_jobs/HolaPerdida");
-const ferDirectMessage = require("./cron_jobs/FerDm");
-
 require("dotenv").config();
 
 client.on("ready", () => {
@@ -48,10 +44,6 @@ client.on("ready", () => {
 
   // Bog logged in
   console.log(`Bot is ready, logged in as: ${client.user.tag}`);
-
-  //Set-up cron job methods
-  holaPerdida(client);
-  ferDirectMessage(client);
 });
 
 client.on("message", (msg) => {
