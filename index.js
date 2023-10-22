@@ -8,6 +8,7 @@ const {
   REST,
 } = require("discord.js");
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const { clientId, guildId, token } = require("./config.json");
 
 // Settings for slash commands
 client.commands = new Collection();
