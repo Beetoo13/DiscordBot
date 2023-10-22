@@ -1,6 +1,12 @@
 const fs = require("fs");
 const path = require("path");
-const { Client, Collection, Events, GatewayIntentBits } = require("discord.js");
+const {
+  Client,
+  Collection,
+  Events,
+  GatewayIntentBits,
+  REST,
+} = require("discord.js");
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 // Settings for slash commands
